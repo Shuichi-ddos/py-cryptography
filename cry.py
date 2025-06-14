@@ -26,13 +26,13 @@ def save_encrypted_data(nonce, ciphertext, tag):
         file.write(f"Nonce: {nonce}\n")
         file.write(f"Ciphertext: {ciphertext}\n")
         file.write(f"Tag: {tag}\n")
-    print(f"Şifreli dosya Desktop'a kaydedildi: {desktop_path}")
+    print(f"Tệp được mã hóa được lưu vào Desktop: {desktop_path}")
 
 
 #Chức năng chính
 def main():
     # Lấy văn bản đầu vào từ người dùng
-    text = input("Bir metin girin: ")
+    text = input("Nhập một số văn bản: ")
 
     # Tạo khóa mã hóa ngẫu nhiên có độ dài 16 byte
     key = get_random_bytes(16)
